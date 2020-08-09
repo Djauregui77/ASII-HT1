@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    </head>
+    <body>
+        <!--  <p th:text="'Hello, ' + ${name} + '!'"></p>
+        <p th:text="'Hello, ' + ${sum} + '!'"></p>
+        <div>TODO write content</div>-->
+        
+        <div class="container">
+            <div style="text-align: center"><h3>MENU</h3></div>
+
+            <div class="menu_content">
+                <div class="grid_container">
+                    <div class="grid_element"><div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="..." class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Operaciones Empleados</h5>
+        <p class="card-text">Catalogo Empleados</p>
+       
+      </div>
+    </div>
+  </div>
+</div><button class="btn btn-secondary">Empleados</button></div>
+                    <div class="grid_element"><div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="..." class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Operaciones Productos</h5>
+        <p class="card-text">Catalogo de productos</p>
+       
+      </div>
+    </div>
+  </div>
+</div><button class="btn btn-secondary">Productos</button></div>
+
+                    <div class="grid_element">
+                        <form th:action="@{/ordenes}" method="get">
+                           <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="..." class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Operaciones Ordenes</h5>
+        <p class="card-text">Caja</p>
+       
+      </div>
+    </div>
+  </div>
+</div> <button class="btn btn-secondary">Ordenes</button>
+                        </form>
+                    </div>
+                    <div class="grid_element">
+                    <form th:action="@{/cocinero}" method="get">
+                    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../static/images/che.jpg" th:href="@{/images/che.jpg}" class="card-img" alt="...">
+      
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Operaciones Cocinero</h5>
+        <p class="card-text">Cocinero</p>
+      
+      </div>
+    </div>
+  </div>
+</div><button class="btn btn-secondary">Cocinero</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+       <!-- <p th:text="'Item grabado, ' + ${item} + '!'"></p>
+            <p th:text="${put}"></p>
+
+
+			<table class="table table-striped">
+            <caption>Menu</caption>
+            <thead>
+                <tr>
+                	<th>Id</th>
+                    <th>Descripción</th>
+                    <th>Agregar</th>
+                </tr>
+            </thead>
+            <tbody>
+			<tr th:each="variable : ${menu}">
+				<td th:text="${variable.IdMenu}"></td>
+				<td th:text="${variable.Descripcion}"></td>
+			<td>
+        		<form th:action="@{/addmenu}" method="post">
+            		<input type="hidden" name="prodId" th:value="${variable.IdMenu}"/>
+            		<input type="hidden" name="prodName" th:value="${variable.Descripcion}"/>
+                	<button type="submit" class="btn btn-danger">+</button>
+            	</form>
+        	</td>
+			</tr>
+			</tbody>
+			</table>-->
+        </div>
+
+    </body>
+
+    <style>
+        .grid_container{
+            display: grid; grid-template-columns: auto auto;
+            width: 100vw;
+            height: 95vh;
+        }
+        .grid_element{
+            padding: 10px;
+            text-align: center;
+            align-self: center;
+        }
+        .container{
+            display: block;
+            height: 100vh;
+        }
+
+        .menu_content{
+            display: flex;
+        }
+    </style>
+</html>
