@@ -1,9 +1,8 @@
 # ASII_HT1_AntiguaB
 
 Integrantes
-- Samuel Solis
-- Estuardo Luna
-- Donal Jauregui
+- Estuardo Luna 0910-02-13118
+- Donal Jauregui 0910-16-8065
 
 
 
