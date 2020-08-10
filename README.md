@@ -82,3 +82,16 @@ ALMUERZO
 - Pastel (Q10.00)
 - Flan (Q8.00)
 - gelatina (Q3.00)
+
+##Generalidades para el Funcionamiento del Proyecto
+
+- Se debera tener instalado PostgresSql 10
+
+###Con la siguiente configuración:
+- spring.jpa.database=POSTGRESQL
+- spring.jpa.show-sql=true
+- spring.jpa.hibernate.ddl-auto=update
+- spring.datasource.driver-class-name=org.postgresql.Driver
+- spring.datasource.url=jdbc:postgresql://localhost:5433/dbantiguaburguer
+- spring.datasource.username=postgres
+- spring.datasource.password=01992004eI
